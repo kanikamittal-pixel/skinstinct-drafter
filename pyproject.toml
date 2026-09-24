@@ -1,0 +1,6 @@
+[tool.vercel]
+# Vercel's Flask framework auto-detection scans the whole repo for a Flask
+# app and got confused by app/ (this project's Telegram-bot package, not a
+# Flask app) - api/webhook.py is the actual Flask entrypoint for the
+# Vercel deployment. See README's "Vercel webhook" section.
+entrypoint = "api.webhook:app"
