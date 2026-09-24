@@ -17,10 +17,11 @@ means only notes that pass ever cost a drafting call, instead of every note
 costing one regardless of outcome.
 
 Below REJECT_THRESHOLD (shared with app/batch.py): the note is auto-parked
-with the score as its reason and nothing is sent to Meera. Nothing is
-deleted - the note is still reachable via "Show all" from any batch
-message, and gets re-scored on the next batch or the next time material is
-added to it.
+with the score as its reason, and Meera gets a short message saying so (the
+score and reason, not silence - an earlier version said nothing at all,
+which just looked broken). Nothing is deleted - the note is still reachable
+via "Show all" from any batch message, and gets re-scored on the next batch
+or the next time material is added to it.
 
 The twice-weekly batch (app/batch.py) still runs independently and will
 re-score anything still sitting as 'new' or 'parked' - this instant path
@@ -109,6 +110,14 @@ async def process_new_note(update: Update, context: ContextTypes.DEFAULT_TYPE, n
             conn.commit()
             db.finish_batch(conn, batch_id, "sent")
             conn.commit()
+            # Was silent before - a rejected note should still tell Meera
+            # something happened, not vanish with no trace at all.
+            await context.bot.send_message(
+                chat_id=config.meera_user_id,
+                text=f"Noted, but parked it - scored {score}/10: {reason}\n\n"
+                "Not deleted. It'll be re-scored next batch, or add more detail "
+                "and drop it again. Find it anytime via \"Show all\" on any batch message.",
+            )
             return
 
         # Passed - draft it, with a real Google News hook if one's relevant.

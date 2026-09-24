@@ -3,8 +3,9 @@ channel, then immediately runs it through the transcribe -> score -> draft
 -> news -> send pipeline (app/instant.py): score the raw note first against
 the same 0-10 cutoff the twice-weekly batch uses, and only if it passes,
 draft it with a news hook and send Meera the final draft right away. A note
-that doesn't pass is auto-parked, silently, same as the batch would do -
-it still surfaces later via "Show all".
+that doesn't pass is auto-parked, with a short note back to Meera saying
+why (score + reason) - it still surfaces later via "Show all", nothing is
+deleted.
 
 Meera can also drop a note directly into her private DM with the bot,
 instead of the channel - that path is handled in app/review.py
