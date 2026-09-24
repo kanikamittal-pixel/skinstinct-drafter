@@ -1,8 +1,22 @@
+[project]
+name = "skinstinct-drafter-webhook"
+version = "0.1.0"
+requires-python = ">=3.9"
+# Only what api/webhook.py's current scope (note collection) actually
+# imports at runtime: flask (the entrypoint) and httpx (app/telegram_sync.py,
+# app/webhook_handlers.py). The long-polling bot's heavier dependencies
+# (python-telegram-bot, openai, pypdf, feedparser, ...) live in
+# requirements.txt for local dev and are NOT needed by this Vercel function -
+# keeping them out of here keeps the deployed function small and this lock
+# file honest about what actually runs on Vercel.
+dependencies = [
+    "flask>=3.0,<4",
+    "httpx>=0.27,<1",
+]
+
 [tool.vercel]
 # Vercel's Flask framework auto-detection scans the whole repo for a Flask
 # app and got confused by app/ (this project's Telegram-bot package, not a
 # Flask app) - api/webhook.py is the actual Flask entrypoint for the
 # Vercel deployment. See README's "Vercel webhook" section.
 entrypoint = "api.webhook:app"
-
-# trigger: verifying Vercel auto-deploy after reconnecting Git integration
