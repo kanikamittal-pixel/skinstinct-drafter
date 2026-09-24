@@ -4,3 +4,5 @@
 # Flask app) - api/webhook.py is the actual Flask entrypoint for the
 # Vercel deployment. See README's "Vercel webhook" section.
 entrypoint = "api.webhook:app"
+
+# trigger: verifying Vercel auto-deploy after reconnecting Git integration
