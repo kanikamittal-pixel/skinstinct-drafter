@@ -1,0 +1,17 @@
+Category: Formulation Science Subject: Ceramides and the barrier - let me explain what we're actually talking about
+
+Hi,
+
+"Barrier repair" has become one of the most used phrases in skincare over the last few years, to the point where I think most people have a vague sense that it means something good for their skin without a clear picture of what the barrier is or what repairing it involves. I want to fix that.
+
+The skin barrier - technically the stratum corneum - is the outermost layer of the epidermis. It's not really a wall. It's more accurately described as a matrix of dead skin cells surrounded by a lipid mixture. That lipid mixture is approximately 50% ceramides, 25% cholesterol, and 15% free fatty acids, with the remainder being other lipid types. The ratio matters. The lipids don't function as a simple seal - they create a layered structure through which water can be retained and controlled and through which external irritants can be resisted.
+
+When people talk about a compromised barrier, they're usually describing a state where that lipid matrix is depleted or structurally disrupted. Depletion happens through over-cleansing with harsh surfactants, through over-exfoliation, through environmental exposure, through certain skin conditions. When the lipid structure is disrupted, transepidermal water loss increases - water evaporates from the skin faster than it should - and the skin becomes more permeable to things that should stay out: irritants, allergens, microorganisms.
+
+Ceramide-containing products can support barrier function by replenishing the ceramide component of the lipid matrix. The key word is "can." The ceramides in a topical product need to be the right type (there are several ceramide subtypes, and their functions differ), in a base that allows integration with the existing lipid matrix, and at a concentration that's meaningful. A ceramide listed late in the INCI - after the preservatives - is present at trace amounts that are unlikely to contribute meaningfully to anything.
+
+For our formulation approach, we focus on ceramide NP and AP as the primary ceramide types, because these have the most consistent research behind topical application. We pair them with cholesterol and fatty acids to approximate the physiological ratio rather than delivering ceramides in isolation, because the evidence suggests the matrix effect matters more than high ceramide concentration alone. We don't currently market any of our products primarily on barrier repair claims. When we have the formulation data to support that claim specifically, we will.
+
+The practical implication: if your skin feels reactive, tight, or easily irritated, and you're using a heavy exfoliation routine or a harsh cleanser, the barrier disruption explanation is plausible and worth addressing before adding more actives. Strip back the routine before building it up.
+
+Meera

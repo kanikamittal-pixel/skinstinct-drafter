@@ -1,0 +1,17 @@
+Category: Industry Transparency Subject: Clean beauty gets some things right. The rest is making things harder.
+
+Hi,
+
+I want to be careful writing this one because I've seen this conversation go badly in both directions. There's a version that dismisses clean beauty entirely as marketing nonsense, and a version that treats "clean" certification as sufficient reason to trust a product's safety and efficacy. I think both are wrong, and the truth is more specific.
+
+What clean beauty gets right: it pushed a meaningful number of brands to examine their ingredient lists and remove things that were either unnecessary or had reasonable evidence of harm at cosmetic exposure levels. The pressure to justify every ingredient - rather than defaulting to whatever was standard in a previous formulation - has been genuinely useful for the industry. Some of the widely avoided ingredients under clean beauty frameworks have real toxicological reasons to avoid them. Some of the manufacturing transparency requirements that have emerged alongside the movement are good.
+
+Where it gets complicated is in the categorisation logic. Many clean beauty standards operate on ingredient blacklists that mix compounds with strong evidence of harm with compounds that have almost no evidence of harm at the concentrations used in cosmetics, and treat both as equivalent. Parabens are the obvious example. The paraben concern originated from studies showing oestrogenic activity at high concentrations - concentrations many orders of magnitude above what's present in a cosmetic product. The evidence that paraben concentrations in cosmetics cause harm in humans is essentially absent. The substitute preservative systems that replaced them in many formulations are, in several cases, less thoroughly studied and causing more sensitisation reactions than the parabens they replaced.
+
+I don't use parabens in our formulations, for reasons that are partly pragmatic and partly about customer trust. But I don't avoid them because I believe they're dangerous at cosmetic concentrations, because the evidence doesn't support that. I want to be honest about that distinction.
+
+The claim I find genuinely problematic in clean beauty is the implicit one - that "clean" means safer, better studied, or more efficacious. It doesn't mean any of those things. It means the formulation was reviewed against a particular ingredient list by a particular standard. Those standards differ significantly across certification bodies. A product certified as clean by one organisation can contain ingredients that would fail certification by another.
+
+I'm not telling you to abandon clean beauty standards if they matter to you. I'm saying that "clean" is a marketing category, not a scientific one, and evaluating what's behind any specific certification is worth doing before treating it as a quality indicator.
+
+Meera

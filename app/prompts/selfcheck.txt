@@ -1,0 +1,20 @@
+{voice_rules}
+
+---
+
+TASK
+
+Check the draft LinkedIn post below against the style checklist in the rules
+above (Section 17, adapted for LinkedIn). For each checklist item, say
+whether the draft passes. Then, if there is at least one clear failure,
+produce a revised draft that fixes ONLY those failures while changing as
+little else as possible - keep her content and structure, do not rewrite
+freely. If everything passes, return the draft unchanged as revised_text.
+
+DRAFT TO CHECK:
+{draft_text}
+
+Return JSON matching the provided schema exactly: passed (bool, true only if
+ALL items pass), failed_items (list of short strings naming which checklist
+items failed and why), revised_text (the fixed - or unchanged - draft),
+word_count (of revised_text).

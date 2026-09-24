@@ -1,0 +1,17 @@
+Category: Ingredient Deep-Dive Subject: Peptides: what the research actually says
+
+Hi,
+
+Peptide serums are one of the categories I get asked about most frequently, and my honest position is more qualified than most of the content on this topic, so I want to explain it properly.
+
+Peptides are short chains of amino acids. Proteins - including collagen and elastin, which give skin its structural properties - are long chains of amino acids. The premise behind peptide skincare is that applying short amino acid chains topically can signal the skin to produce more collagen or perform other structural repair functions. This is called cell signalling, and the mechanism is real. Specific peptides do trigger specific cellular responses.
+
+The research gap is in the translation from mechanism to commercial product efficacy. The peptides with the strongest research behind their cell signalling functions - palmitoyl pentapeptide-4 (Matrixyl), acetyl hexapeptide-3 (Argireline), and a handful of others - show genuine efficacy in in-vitro studies and in some controlled clinical trials. The in-vitro results are consistent. The clinical results are more variable, with effect sizes that range from modest to meaningful depending on the study design, the application frequency, and the concentration used. Here is the concentration problem, and it's the same problem as almost every other active category. Peptides at effective concentrations in a serum are expensive ingredients. They also need a delivery system that allows them to penetrate the stratum corneum - peptides are generally too large for passive penetration without some assistance, and the vehicle matters significantly. A peptide serum that lists palmitoyl pentapeptide-4 in the INCI but contains it at 0.01% in a water-heavy base is unlikely to deliver clinical effects. The ingredient is present. The formulation conditions for efficacy are not.
+
+I've seen products marketed with language like "contains 7 peptides" or "multi-peptide complex" that, when I've looked at the INCI position of those ingredients, appear to contain each of them at concentrations below where the research shows any meaningful effect. Seven peptides at sub-therapeutic concentrations is not better than two peptides at effective concentrations. It's a label that sounds comprehensive and delivers less than the framing implies.
+
+We don't currently sell a peptide product. I'm telling you this because I want the assessment to be straightforward - I don't have a commercial stake in how you read it. When the research is this concentrated in the delivery and concentration questions, I think the honest thing is to say that the category works, the products vary enormously in whether they're formulated to work, and the label doesn't tell you which category a specific product falls into.
+
+What to look for, if you want to use peptides: concentration information if the brand publishes it, packaging that limits air and light exposure, and independent clinical evidence rather than in-vitro claims alone.
+
+Meera

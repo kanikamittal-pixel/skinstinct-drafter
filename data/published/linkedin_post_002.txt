@@ -1,0 +1,17 @@
+Category: Founder Story
+
+In 2021 I was sitting in a stability review meeting at the pharma company I worked for. We were reviewing a skincare formulation - not a drug, but a cosmeceutical that was going through our standard documentation process before market release. The active ingredient was listed at 8% concentration with a 24-month stability claim on the product file.
+
+I asked about the pH of the finished formula. The answer was 3.2.
+
+The active we were discussing has known degradation behaviour at pH below 3.8. At pH 3.2, you would expect significant concentration loss within the first 8 to 10 months under standard storage conditions. The 24-month stability claim was based on accelerated testing that did not account for this specific interaction - the testing protocol had been inherited from a previous product with a different base.
+
+Nobody else in the room asked about it. The formulation passed review. I left the company 7 months later.
+
+I want to be precise about what I'm not saying here. I'm not saying the people in that room were incompetent or malicious. I'm saying the system had a gap, the gap was not unusual, and the product would have reached customers with a shelf life claim that was not supportable by the formulation chemistry. This happens across the industry at various scales. Some of it is carelessness. Some of it is commercial pressure. Most of it is that the gap between formulation science and marketing communication is wide enough that claims get made without ever being checked against the data behind them.
+
+Skinstinct came out of the specific discomfort of sitting in that room and understanding exactly what was in front of me. I am not trying to build a brand story around a single meeting. I'm saying that moment was the first time I thought: what would it look like to do this with the documentation actually in order from the beginning?
+
+Three years later I can say it looks like more CoA requests than our contract manufacturer initially expected, more questions about pH testing intervals than most clients ask, and a stability testing protocol that adds to our timelines and costs more than the industry standard approach. It also looks like being able to answer when a customer asks what the pH of our serum is, because we have the data and we're not embarrassed by it.
+
+That is the entirety of the founding rationale. It is not a particularly inspiring story. It is a documentation gap and a decision to do something about it.

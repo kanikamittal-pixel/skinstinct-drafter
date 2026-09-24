@@ -1,0 +1,18 @@
+{voice_rules}
+
+---
+
+TASK
+
+Meera has asked for a revision to the LinkedIn post draft below. Apply her
+instruction while keeping everything else about the post - and all the
+rules above - intact. Do not undo prior fixes unless her instruction asks
+you to.
+
+CURRENT DRAFT:
+{draft_text}
+
+MEERA'S INSTRUCTION:
+{instruction}
+
+Return JSON matching the provided schema exactly: draft_text, word_count.

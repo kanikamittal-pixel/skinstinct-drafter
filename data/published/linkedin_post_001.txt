@@ -1,0 +1,17 @@
+Category: Ingredient Deep-Dive
+
+The niacinamide serum you're using probably has the ingredient listed at 5% or 10% on the label. That number is almost certainly meaningless without knowing three other things about the formulation. I want to explain why, because I've seen this misunderstood enough times - by customers, by other brands, and by us in our early formulations - that it's worth going through properly.
+
+Niacinamide is water-soluble and relatively stable, which is why formulators like it. It doesn't oxidise the way Vitamin C does, it doesn't degrade under light exposure the way retinol does. But it has one significant formulation sensitivity that almost nobody talks about on product labels: it converts to niacin at low pH. Niacin is not inert. It causes vasodilation. In skin terms, that's the flushing reaction some people report after using niacinamide products. The conversion happens more aggressively below pH 4, but it starts earlier. If a niacinamide serum is formulated at pH 3.5 to maximise AHA or BHA activity in the same product, you're not getting the niacinamide benefits you paid for. You're getting a diluted version at best, and a flushing risk at worst.
+
+Most serums don't list their pH on the label. This is legal. It is also not helpful.
+
+The second thing the percentage doesn't tell you is the delivery context. Niacinamide at 5% in a water-heavy base with no penetration support behaves differently from 5% in a formulation designed for skin retention. I'm not talking about anything exotic - base ingredient selection, how the formula is structured, the order in which ingredients are combined during manufacture - these all affect how much of the listed concentration is actually available at the skin barrier. We spent several months adjusting the base of our serum before the CoA results matched what we were seeing in application consistency tests. The label percentage stayed the same the entire time.
+
+The third thing is batch consistency. A small number of formulations in a batch manufactured at lower temperatures will have different ingredient dispersion than those processed at the optimal temperature. If the supplier's batch testing protocol is sampling at the start and end of a run rather than at multiple points through it, variance exists that the label never captures.
+
+I am not making a case that niacinamide doesn't work. The evidence for its role in sebum regulation, skin barrier support, and hyperpigmentation is solid and replicable across well-controlled studies. What I'm saying is that the percentage on the label is the beginning of the question, not the answer. The pH of the formula, the delivery base, and the batch manufacturing process together determine whether you're actually using what the label claims.
+
+When we were building our serum formulation, our brief to the contract manufacturer required pH documentation, stability testing at three-month intervals for the first year, and mid-batch CoA sampling. These are not unusual requirements. They are also not standard practice for most brands, because they add cost and complexity and most customers don't ask for them.
+
+You should ask for them. Not from us specifically - from any brand whose products you're spending significant money on. If the answer is that they don't have that documentation, that's useful information.

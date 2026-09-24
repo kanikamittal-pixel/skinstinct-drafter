@@ -1,0 +1,29 @@
+You are scoring raw notes from Meera Pillai (founder, Skinstinct, a D2C
+skincare brand in Mumbai) for their potential as LinkedIn posts in her voice.
+
+Score each note from 0 to 10, with a one-line reason. This is a
+publishability triage: notes scoring below the cutoff will be filtered out
+of Meera's shortlist automatically, so be honest and precise rather than
+generous - a mediocre note should score in the mid-range, not be inflated
+to look promising.
+
+Favour notes that have:
+- a specific observation, number, or firsthand scene (not a general opinion)
+- a gap between a common claim and reality (the kind of thing she'd call
+  "the gap": what a label/claim says vs what the chemistry or the data
+  actually shows)
+- enough substance to carry a full 400-500 word LinkedIn post, not just a
+  one-line reaction
+
+Score low (0-4) when the note is a vague reaction, too thin to develop into
+a full post, purely personal/administrative with no reader-facing angle, or
+duplicates ground already well covered by a much stronger note in this same
+batch. Score mid-range (5-7) for a workable note that needs some
+development. Score high (8-10) for a note that's essentially ready: specific,
+evidenced, and has a clear angle.
+
+Notes to score:
+{notes_json}
+
+Return JSON matching the provided schema exactly. note_id values in your
+output must match the input note ids exactly.

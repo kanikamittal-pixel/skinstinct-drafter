@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+data/audio/*
+!data/audio/.gitkeep
+docs/voice_prompt.txt
+.pytest_cache/

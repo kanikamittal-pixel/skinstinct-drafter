@@ -1,0 +1,36 @@
+{voice_rules}
+
+---
+
+TASK
+
+Write ONE LinkedIn post in Meera's voice, following every rule above, based
+on the note below. Target length: {min_words}-{max_words} words.
+
+SOURCE NOTE (Meera's own raw material - develop it, do not invent facts
+beyond it):
+{note_text}
+
+{news_block}
+
+RULES FOR THIS DRAFT SPECIFICALLY
+
+- You may reference AT MOST ONE of the news items listed above, and ONLY if
+  it is genuinely relevant to the note. If none are relevant, or no news
+  items are listed, write the post with no news hook at all - this is
+  expected and fine, do not force a connection.
+- You may ONLY reference a headline, source, or fact that appears in the
+  news items listed above. Never invent a headline, statistic, study,
+  quote, or news event that isn't given to you.
+- Every scientific or factual claim about ingredients, pH, concentrations,
+  percentages, studies, or regulation MUST be wrapped in [VERIFY] tags like
+  this: [VERIFY]niacinamide converts to niacin below pH 4[/VERIFY]. This
+  includes claims drawn from the note itself unless the note explicitly says
+  Skinstinct has already tested/documented it as fact (in which case it's
+  her own firsthand data, not something to verify).
+- Do not invent statistics, studies, or quotes under any circumstances, in
+  the note or from outside knowledge.
+
+Return JSON matching the provided schema exactly: draft_text, word_count,
+used_news_item_index (0-based index into the news items above, or null if
+none used).

@@ -1,0 +1,15 @@
+Category: Consumer Education Subject: The one thing I want you to stop doing with SPF
+
+Hi,
+
+Reapplying sunscreen is not optional. I know this isn't new information. I'm going to explain why the specific way most people apply SPF means they're not getting the protection the label claims, because I think understanding the mechanism changes the behaviour more than repeating the instruction does.
+
+SPF ratings are tested under standardised conditions: 2mg of product per square centimetre of skin. That's the application amount the rating is based on. A 2022 study from the University of Liverpool measuring real-world SPF application found that most people apply between 0.5-1mg per square centimetre - roughly a quarter to half of the tested amount. At half the tested amount, an SPF 30 product delivers protection closer to SPF 5-6. This is not a rounding issue. This is the difference between meaningful protection and almost none.
+
+The second issue is the SPF in moisturiser problem. I get questions about this regularly, and my position is simple: SPF in a moisturiser cannot replace a standalone sunscreen as your primary UV protection. The reason is the application amount issue I just described, compounded. People apply significantly less moisturiser than sunscreen. The SPF in a moisturiser is rated assuming the same 2mg/cm2 that no one achieves even with a dedicated sunscreen product. In practice, SPF 15 in a moisturiser, applied the way most people apply moisturiser, is delivering almost no meaningful UV protection.
+
+There's also a formulation consideration. Sunscreen filters need to be evenly distributed across the skin surface to provide the protection the rating claims. A thick, even, deliberate sunscreen application achieves this. A quickly applied moisturiser blended into the skin as part of a morning routine does not. The filter distribution matters as much as the concentration.
+
+What this means practically: if sun protection matters to you - and for long-term skin health in India, at our UV index levels, it should - you need a dedicated sunscreen product applied generously, applied last in your routine before sun exposure, and reapplied every two hours of continuous outdoor exposure. The moisturiser with SPF is fine as an additional layer. It is not a substitute. I'm not selling a sunscreen. I want to be clear about that. This is not a setup for a product launch. I just find the gap between how SPF products are marketed and what the application science actually shows to be significant enough that I want to explain it plainly.
+
+Meera

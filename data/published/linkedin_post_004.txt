@@ -1,0 +1,15 @@
+Category: Industry Transparency
+
+Last September I was at a trade fair in Mumbai. One of the booths had a banner that said: CLINICALLY TESTED. DERMATOLOGIST APPROVED. The product was a moisturiser.
+
+I asked the brand representative what the clinical testing involved. She said she'd find out and get back to me. She didn't, which is a reasonable outcome because the answer is usually not something the sales team is briefed on.
+
+"Clinically tested" is not a regulated claim in India under current cosmetic labelling guidelines. It means whatever the brand chooses it to mean. In practice, I've seen it applied to: a 4-week consumer perception study (participants rating their own skin feel), an in-vitro ingredient efficacy test run by the ingredient supplier rather than the brand, a safety patch test conducted on 25 people to confirm no irritation response, and one case where I could not find any documentation at all for what the testing referred to.
+
+None of these are clinical trials in any meaningful sense of the term. None of them would pass review in a pharmaceutical efficacy claim context. All of them are technically defensible under current cosmetic regulations because the regulations don't require the claim to be substantiated in any specific way.
+
+I want to be careful here because I'm not saying all efficacy claims in the skincare industry are fabricated. Some brands do robust independent testing. Some ingredient suppliers publish genuinely useful data. The problem is that "clinically tested" as a label claim tells the customer nothing about which category they're looking at. The words are the same whether the testing was a 500-person double-blind study or 12 people rating how their skin felt after two weeks. There is no way to know from the label.
+
+What you can do is ask. Not at a trade fair booth, but in writing, to the brand's customer service. Ask what the clinical testing referred to on the label involved: how many participants, what the study design was, who conducted it, and whether the results are available. If the brand has real data, they will usually share it without much resistance, because real data is a commercial asset and brands are proud of it. If the answer is vague or doesn't arrive, that is also useful information.
+
+We list exactly what our product testing covers on our website. Sample size, study type, who ran it. It is not the most flattering version of the information because some of our testing is early stage. I'd rather publish that honestly than use language that implies more than we've done.

@@ -1,0 +1,15 @@
+Category: India-Specific Context
+
+In the 12 months to June 2025, 23% of our product returns came from customers who mentioned the texture or feel of the product as the reason. When I mapped those returns against the customer's location, the pattern was immediate: 71% were from customers in cities with average annual humidity above 70%. Mumbai, Chennai, Kochi, Kolkata.
+
+We were using a formulation originally developed for a climate it was not designed for.
+
+Most skincare formulations in the Indian market are either imported directly or developed using ingredient systems and efficacy benchmarks from European and Korean markets. This is not inherently a problem - the actives science translates. But the vehicle, the base that carries the actives, is calibrated for a different climate. A moisturiser formulated for Oslo in February has different occlusive requirements than one for Chennai in August. The emollient-to-humectant ratio, the occlusive percentage, the overall texture that comes out of the formulation - these are downstream of climate assumptions that were made by the formulator for their market, not ours.
+
+The specific issue in our case was that our first serum base was too film-forming for high-humidity skin conditions. In a dry climate, that film helps retain moisture. In Mumbai in July, the same film traps sweat under the product, changes the skin feel within 20 minutes of application, and produces exactly the greasy, heavy sensation our customers were describing. The actives were intact. The formulation was working as designed. It was designed for the wrong context.
+
+We reformulated using a lighter base system with adjusted humectant-to-occlusive balance. Returns from humid cities dropped to 8% in the following quarter. The active ingredient concentrations stayed identical.
+
+I bring this up not because our reformulation is a selling point - it should have been right the first time. I bring it up because the climate assumption problem is almost never discussed openly in Indian skincare. Brands import formulations or use contract manufacturers running formulations designed elsewhere, and the adaptation step gets skipped because it's expensive and because customers often can't articulate what's wrong beyond "it doesn't feel right." The texture data usually exists somewhere - in returns, in reviews, in customer service logs. The connection to climate and base formulation chemistry is rarely made.
+
+Our customer return data is not proprietary. We track it because it's useful, and the pattern it revealed was one we should have anticipated from the start. If you're building a skincare brand for the Indian market, the first question to ask your contract manufacturer is what climate the base formulation was validated for. If the answer is anything other than "we'll run stability testing under Indian temperature and humidity conditions," that's worth investigating further.

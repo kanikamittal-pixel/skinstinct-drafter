@@ -1,0 +1,19 @@
+Category: Ingredient Deep-Dive Subject: The Vitamin C email (I've been putting this off)
+
+Hi,
+
+I've been avoiding writing this one because Vitamin C in skincare is genuinely complicated and most explanations either oversimplify it to the point of uselessness or go so deep into the chemistry that the practical information gets lost. I'll try to do neither.
+
+Start here: Vitamin C is not a single ingredient. L-ascorbic acid is the form that has the most robust research behind it. It's also the most unstable and the hardest to formulate with. When a product says "Vitamin C" without specifying which derivative, you don't know which of the following you're getting: ascorbic acid, sodium ascorbyl phosphate, magnesium ascorbyl phosphate, ascorbyl glucoside, ethyl ascorbic acid, or several others. These derivatives have different stability profiles, different skin penetration characteristics, and different bodies of evidence behind them.
+
+L-ascorbic acid has the most evidence for collagen synthesis support and antioxidant function at the skin layer. But it oxidises readily - air, light, and heat all accelerate the process. Oxidised ascorbic acid turns orange-yellow. If your serum has changed colour from clear or pale yellow to a deeper orange, you're looking at a product where significant degradation has occurred. The product isn't dangerous, but it's delivering less than it was when you opened it. How much less depends on how it was stored, how often it was opened, and how long ago you bought it.
+
+In our own formulation testing, we found that L-ascorbic acid at the concentrations worth using - above 10% - required airless pump packaging, a pH below 3.5, and a specific antioxidant support system to maintain stability across a 12-month period under standard storage conditions. Without all three of those things in place simultaneously, the concentration dropped measurably within 4-6 months. That's a meaningful finding, because most products sit in a bathroom exposed to steam and light and temperature variation for longer than that.
+
+The alternatives - especially ethyl ascorbic acid and sodium ascorbyl phosphate - are more stable and easier to formulate at higher pH, which makes combining them with other actives more straightforward. The trade-off is that the direct efficacy research is thinner. Sodium ascorbyl phosphate converts to ascorbic acid on the skin, but the conversion rate varies and the evidence for comparable efficacy at the same concentrations isn't as strong. That doesn't mean it doesn't work. It means the evidence base is different, and some products use the more stable derivative while marketing it against the efficacy data for the less stable one.
+
+I want to be honest about something: we don't currently sell a Vitamin C product. I have been trying to formulate one that I'm actually satisfied with for about 14 months. The stability requirements for L-ascorbic acid at an effective concentration, in packaging that isn't prohibitively expensive for a product in our price range, in a base that works in humid climates, have been harder to solve than I expected. That's not a story about our inadequacy - it's a story about why this particular ingredient is genuinely difficult to do properly, and why a lot of products in this category are either using it at ineffective concentrations or using more stable derivatives while implying the research for ascorbic acid.
+
+When we get it right, I'll tell you exactly what we did and why.
+
+Meera

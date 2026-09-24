@@ -1,0 +1,17 @@
+Category: Industry Transparency Subject: "Natural" in a formulation lab means something very specific. It's not what the label implies.
+
+Hi,
+
+There's a sourcing conversation I've had with our contract manufacturer probably fifteen times over the last two years. It usually starts with me asking about the origin and processing method of a specific ingredient, and it usually reveals a gap between the way that ingredient is described on a product label and what I'd call an accurate description of how it was produced.
+
+The word "natural" in skincare has no regulatory definition in India. It has no standardised meaning in any major skincare market. A brand can call a product natural if it contains some proportion of plant-derived ingredients, if it avoids certain synthetic compounds on an internally defined list, or by no specific criteria at all. The label claim "natural" is not regulated as a material claim and is not subject to verification requirements. This is not a loophole - it's the current state of the regulatory framework.
+
+In a formulation lab, the question of whether an ingredient is "natural" is more complicated than the label implies. Most ingredients that start as plant-derived go through significant processing before they appear in a cosmetic. Cold-pressed oils are pressed at low temperatures to preserve fatty acid profiles - this matters and the claim is meaningful when it's accurate. But I've encountered contract manufacturers who received materials labelled "cold-pressed" on the shipping documentation that arrived with temperature logs showing processing well above what cold-pressing requires. Whether that was a supplier labelling error or something else, the documentation didn't match the claim.
+
+"Plant-derived" is another term that sounds straightforward and isn't. Squalane, for instance, is available in olive-derived and sugarcane-derived forms. Both are plant-derived. Both have very different sustainability profiles and sometimes different purity levels. "Centella asiatica" appears in products as the whole plant extract, as standardised extracts with specific asiaticosides percentages, and as synthetic madecassoside - a compound from centella - all under ingredient names that a consumer would be unlikely to distinguish.
+
+I'm not saying natural ingredients are better or worse than synthetic ones. That binary is one of the most unproductive framings in skincare. Some synthetics are safer, more stable, and better studied than their natural equivalents. Some natural ingredients are poorly characterised, inconsistently sourced, and more likely to cause sensitisation than the preservatives people avoid because they sound chemical.
+
+What I'm saying is that "natural" as a label claim tells you something about the marketing positioning and nothing reliable about the formulation. If the origin and processing of the ingredients in your skincare matter to you - and they're legitimate things to care about - ask for sourcing documentation. Not every brand will have it or share it. The ones who do, and who can speak to it specifically, have been asking their suppliers the right questions.
+
+Meera

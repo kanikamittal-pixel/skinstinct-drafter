@@ -1,0 +1,23 @@
+Category: Formulation Science Subject: What an "active" actually does (and why most explanations stop too early)
+
+Hi,
+
+I want to talk about how actives work, because I think most explainer content on this topic stops exactly one step before the part that matters.
+
+The standard version goes like this: "Niacinamide regulates sebum production and reduces hyperpigmentation." This is true. It is also almost entirely useless information for evaluating whether a specific product does anything.
+
+An active ingredient does something when it reaches the site where it needs to do it, in a concentration sufficient to trigger the relevant biological response, in a form that is still intact and bioavailable at the point of contact. All three of those conditions have to be met. The INCI listing on a label confirms that the ingredient was present during manufacturing. It says nothing about whether those three conditions are met in the finished product.
+
+Take penetration. Niacinamide is small and water-soluble, so it penetrates the epidermis without much assistance. Vitamin C is more complicated - ascorbic acid needs to be at a low pH to penetrate effectively, and that creates formulation conflicts with other actives that are pH-sensitive in the opposite direction. Retinol needs to reach the dermis to do its primary work, which means the vehicle matters enormously. An oil-in-water emulsion behaves differently from an oil-based serum. The base isn't decoration around the active. It determines whether the active arrives.
+
+Then there's concentration. Every active has a minimum effective concentration below which it's doing nothing measurable. For niacinamide, the research supporting sebum regulation starts at around 2% and gets more pronounced at 4-5%. Some studies show benefits at 10%. But below 2%, you're in the range of cosmetic preservative function rather than therapeutic effect. Many products list niacinamide without specifying concentration, because there's no requirement to do so. A product could contain 0.1% niacinamide and list it in the INCI without misrepresentation.
+
+Finally, stability. Vitamin C in its ascorbic acid form is notoriously unstable. It oxidises on contact with air and light. A product that is correctly formulated, correctly packaged, correctly stored, and used within a tight window can deliver effective Vitamin C. The same product left open near a window in a Mumbai summer is delivering progressively less with each use. The concentration on the label reflects the start of the product's life, not the end of it.
+
+I'm not trying to make you distrust every product on your shelf. I'm trying to explain what questions to ask, because the marketing layer has trained most people to evaluate skincare at the ingredient level when the formulation level is where the actual decisions are. "Contains niacinamide" tells you almost nothing. "Contains niacinamide at 4%, pH 5.5-6.0, in a water-based base with documented six-month stability" tells you something.
+
+We publish that information for our products because it exists and because I think you should have it.
+
+More on specific actives in the next few emails.
+
+Meera

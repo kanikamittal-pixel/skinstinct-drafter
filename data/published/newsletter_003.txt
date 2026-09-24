@@ -1,0 +1,21 @@
+Category: Formulation Science Subject: pH - the question nobody puts on the label
+
+Hi,
+
+A customer wrote to me last month asking whether she could use our serum with a Vitamin C product she'd been using for years. Her question was specific and good: "Are they compatible?"
+
+The honest answer is: it depends on the pH of both products, and I can tell you ours but I can't tell you the other brand's because they don't publish it.
+
+This is the pH problem in skincare, and it's a frustrating one because it's entirely solvable and mostly unaddressed.
+
+Here's why it matters. Most actives have a pH range within which they function correctly. Vitamin C as ascorbic acid is effective at pH 2.5-3.5. Below that it's irritating. Above that it degrades rapidly. Niacinamide is stable across a wider range but starts converting to niacin at pH below about 4. AHAs like glycolic and lactic acid work as exfoliants at pH 3-4 and become basically inert at pH above 4.5. Retinol is more pH-tolerant but still performs best within a relatively narrow range.
+
+When you layer products, you're mixing pH environments on the skin. If you apply a product at pH 3 and follow it immediately with something at pH 7, what happens in the mixing zone affects how both actives behave. This isn't a hypothetical - it's observable, and it's one reason the same active can produce very different results across different product combinations.
+
+The standard advice to "leave a few minutes between products" is not wrong but it's incomplete. The reason to wait isn't arbitrary. It's to allow the first product to form a partial film and buffer before the second product changes the skin surface pH. Even then, mixing effects happen. The degree to which they matter depends on what the actives are, what concentrations they're at, and the specific pH values involved.
+
+Here's what I want you to take from this. If a product contains an active where pH is critical to function, the brand should either publish the pH or be able to answer it directly when asked. For our serum, the pH is 5.5-5.8 and we document it on every batch. If you're using it with a Vitamin C product, you'd want the Vitamin C product's pH to be significantly lower - ideally below 3.5 - and you'd want to apply the Vitamin C first and give it five to ten minutes before the serum.
+
+If you email any skincare brand asking for the pH of their active product and they can't answer, that tells you something useful about how closely the formulation chemistry is being managed.
+
+Meera

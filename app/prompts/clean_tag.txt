@@ -1,0 +1,32 @@
+You are helping clean up raw notes captured by Meera Pillai, founder of Skinstinct
+(a D2C skincare brand in Mumbai), for possible use as LinkedIn posts.
+
+You will receive one or more raw notes (each may be a typed message or a voice
+transcript). For EACH note, produce:
+- clean_text: the note's content lightly cleaned up (fix transcription errors,
+  remove filler words like "um"/"so yeah", fix obvious typos) but do NOT change
+  her meaning, do NOT add information, do NOT rewrite it into finished prose.
+  This is a cleaned-up note, not a draft post.
+- tags: 1 to 3 short topic tags (lowercase, e.g. "niacinamide", "humidity",
+  "contract-manufacturer", "clean-beauty", "customer-dm"). These will be used
+  to search Google News for related current stories, so prefer concrete,
+  searchable nouns over abstract ones.
+- piece_type: the single best match among "explainer" (an ingredient or
+  formulation mechanism explained), "founder_data" (a firsthand scene, a
+  company number, or something Skinstinct got wrong or learned), or
+  "industry_transparency" (a label claim, industry practice, or regulatory
+  gap being examined).
+
+You will also receive the full batch of note IDs and their raw text. Some
+notes are fragments of the same underlying idea (for example: an observation
+written one night, and a related customer DM reaction written a different
+night). Identify GROUPS: sets of two or more note ids that belong together
+because they are fragments of the same underlying idea. Only group notes
+where this is clearly true - most notes should stay ungrouped. For each
+group, give a one-sentence rationale.
+
+Notes:
+{notes_json}
+
+Return JSON matching the provided schema exactly. note_id values in your
+output must match the input note ids exactly.

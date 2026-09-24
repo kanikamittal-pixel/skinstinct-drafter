@@ -1,0 +1,19 @@
+Category: Brand Philosophy Subject: Why there's no fragrance in anything we make
+
+Hi,
+
+The shortest version of this email: fragrance is the ingredient category with the highest rate of contact sensitisation in cosmetics, the regulatory framework around it allows almost everything to be hidden under a single label term, and I decided the case for including it wasn't strong enough to justify either of those things.
+
+The longer version.
+
+When a cosmetic product lists "fragrance" or "parfum" on the INCI, that term can legally cover a mixture of anywhere from a handful to several hundred individual chemical compounds. Most of them are undisclosed. Some fraction of those compounds are known allergens - the EU currently requires disclosure of 26 specific fragrance allergens above certain concentrations, and that list has been expanded several times as more sensitising compounds have been identified. The 26 compounds on the list are not the only problematic ones. They're the ones where the evidence was strong enough to mandate disclosure.
+
+Contact sensitisation to fragrance compounds is not the same as an immediate allergic reaction. Sensitisation develops over repeated exposure. The first ten times you use a fragranced product, you might notice nothing. At some point, the immune system has seen the compound enough times to mount a response, and subsequent exposures trigger a reaction. The timing is unpredictable, the reaction can be severe, and once sensitised, you often react to multiple products because fragrance compounds appear across many categories - skincare, haircare, cleaning products, air fresheners. The sensitisation is permanent.
+
+I'm not saying fragranced products will sensitise everyone who uses them. The rate across the general population is estimated at somewhere between 1-3% for significant sensitisation, with higher rates reported in people with existing skin conditions. That's not a majority. But it's also not trivial, and the cost of sensitisation to the individual who develops it is high.
+
+The case for fragrance in skincare is essentially aesthetic and commercial. Products that smell pleasant sell better. Some customers make purchase decisions based on scent experience. These are real and legitimate commercial considerations. I made a different choice because I don't think the aesthetic value justifies the sensitisation risk, and because I don't need the disclosure gap to sell products. If something we make is worth using, I'd rather that be because of what the formulation does, not what it smells like.
+
+Everything we make is fragrance-free. That includes the preservative system, the emollients, and any carrier ingredients where scented variants are commonly used. If you're managing sensitive skin or have had reactions to fragranced products in the past, that's the relevant commitment on our end.
+
+Meera
