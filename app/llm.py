@@ -112,13 +112,21 @@ class LLMClient:
         response_schema: dict,
         temperature: float = 0.4,
         schema_name: str = "response",
+        max_retries: Optional[int] = None,
     ) -> dict:
         """Calls the model asking for JSON matching response_schema. Retries
         on transient failures and on invalid JSON.
+
+        max_retries overrides the module default (MAX_RETRIES) for calls
+        with their own tighter retry budget - e.g. the news-keyword
+        extraction step (app/drafting.extract_news_keywords), which is
+        specified to give up after a single retry and skip the news step
+        rather than hold up drafting.
         """
+        retries = max_retries if max_retries is not None else MAX_RETRIES
         schema = _strict_json_schema(response_schema)
         last_error: Optional[Exception] = None
-        for attempt in range(1, MAX_RETRIES + 1):
+        for attempt in range(1, retries + 1):
             try:
                 response = self._client.chat.completions.create(
                     model=self.model,
@@ -138,9 +146,9 @@ class LLMClient:
             except Exception as exc:  # noqa: BLE001 - we want to retry broadly and log
                 last_error = exc
                 self._log("generate_json.error", attempt=attempt, error=str(exc))
-                if attempt < MAX_RETRIES:
+                if attempt < retries:
                     time.sleep(_backoff_seconds(attempt, exc))
-        raise LLMError(f"OpenAI call failed after {MAX_RETRIES} attempts: {last_error}")
+        raise LLMError(f"OpenAI call failed after {retries} attempts: {last_error}")
 
     def transcribe_audio(self, audio_path: Path) -> str:
         """Transcribes a voice note via the Whisper API. Retries on

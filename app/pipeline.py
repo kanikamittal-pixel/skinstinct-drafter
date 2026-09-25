@@ -3,7 +3,10 @@ deterministic lint checks (app/lint.py) into one call that produces a
 persisted draft row.
 
 Flow for a fresh draft (version 0):
-  news.fetch_news_for_tags -> drafting.generate_draft -> lint.autofix
+  drafting.extract_news_keywords (classify + specific/broader query)
+    -> news.fetch_ranked_news (specific -> broader -> beat, only if
+       newsworthy - see app/news.py and app/prompts/news_keywords.txt)
+    -> drafting.generate_draft -> lint.autofix
     -> drafting.selfcheck_draft (one revision pass) -> lint.autofix
     -> lint.check (remaining warnings shown to Meera, never hidden)
     -> db.insert_draft
@@ -20,9 +23,10 @@ from dataclasses import dataclass
 from typing import Optional
 
 from app import db, lint
-from app.drafting import generate_draft, revise_draft, selfcheck_draft
+from app.drafting import extract_news_keywords, generate_draft, revise_draft, selfcheck_draft
 from app.llm import LLMClient
-from app.news import NewsItem, fetch_news_for_tags
+from app.news import NewsItem, fetch_ranked_news
+from app.news_config import INDIA_CATEGORIES
 
 
 @dataclass
@@ -41,14 +45,39 @@ def build_fresh_draft(
     client: LLMClient,
     *,
     note_id: int,
-    pick_id: int,
+    pick_id: Optional[int],
     note_text: str,
-    tags: list[str],
     piece_type: str,
 ) -> PipelineResult:
-    news_items = fetch_news_for_tags(tags)
     news_item_id: Optional[int] = None
     news_used: Optional[NewsItem] = None
+
+    keywords_result = extract_news_keywords(client, note_text=note_text)
+    db.log(
+        conn, "info", "news", "keywords",
+        note_id=note_id, newsworthy=keywords_result.newsworthy,
+        category=keywords_result.category, keywords=keywords_result.keywords,
+        specific_query=keywords_result.specific_query, broader_query=keywords_result.broader_query,
+    )
+
+    news_items: list[NewsItem] = []
+    if keywords_result.newsworthy:
+        add_india = keywords_result.category in INDIA_CATEGORIES
+        news_items, fetch_log = fetch_ranked_news(
+            specific_query=keywords_result.specific_query,
+            broader_query=keywords_result.broader_query,
+            category=keywords_result.category,
+            keywords=keywords_result.keywords,
+            add_india=add_india,
+        )
+        db.log(
+            conn, "info", "news", "fetch",
+            note_id=note_id, queries_tried=fetch_log.queries_tried, urls=fetch_log.urls,
+            items_kept_per_step=fetch_log.items_kept_per_step, stopped_at=fetch_log.stopped_at,
+            elapsed_seconds=round(fetch_log.elapsed_seconds, 2), items_returned=len(news_items),
+        )
+    else:
+        db.log(conn, "info", "news", "skipped_not_newsworthy", note_id=note_id)
 
     draft = generate_draft(client, note_text=note_text, piece_type=piece_type, news_items=news_items)
     text = lint.autofix(draft.text)
@@ -70,6 +99,9 @@ def build_fresh_draft(
             published_at=news_used.published_at,
             link=news_used.link,
         )
+        db.log(conn, "info", "news", "used", note_id=note_id, title=news_used.title, source=news_used.source)
+    else:
+        db.log(conn, "info", "news", "not_used", note_id=note_id, candidates=len(news_items))
 
     draft_id = db.insert_draft(
         conn,

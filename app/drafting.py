@@ -5,11 +5,11 @@ with the voice rules (app/voice.py) and example posts (app/published.py).
 from __future__ import annotations
 
 import json
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
 
-from app import lint, published, voice
+from app import lint, news_config, published, voice
 from app.llm import LLMClient
 from app.news import NewsItem
 
@@ -78,11 +78,23 @@ SCORE_SCHEMA = {
 DRAFT_SCHEMA = {
     "type": "object",
     "properties": {
-        "draft_text": {"type": "string"},
-        "word_count": {"type": "integer"},
-        "used_news_item_index": {"type": "integer", "nullable": True},
+        "post": {"type": "string"},
+        "used_news": {"type": "boolean"},
+        "news_index": {"type": "integer", "nullable": True},
     },
-    "required": ["draft_text", "word_count"],
+    "required": ["post", "used_news"],
+}
+
+NEWS_KEYWORDS_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "newsworthy": {"type": "boolean"},
+        "category": {"type": "string", "enum": list(news_config.CATEGORIES)},
+        "keywords": {"type": "array", "items": {"type": "string"}},
+        "specific_query": {"type": "string"},
+        "broader_query": {"type": "string"},
+    },
+    "required": ["newsworthy"],
 }
 
 SELFCHECK_SCHEMA = {
@@ -170,6 +182,48 @@ def score_batch(client: LLMClient, notes: list[dict]) -> list[NoteScore]:
 
 
 
+# --- news keywords -------------------------------------------------------------
+
+@dataclass
+class NewsKeywords:
+    newsworthy: bool
+    category: Optional[str] = None
+    keywords: list[str] = field(default_factory=list)
+    specific_query: Optional[str] = None
+    broader_query: Optional[str] = None
+
+
+def extract_news_keywords(client: LLMClient, *, note_text: str) -> NewsKeywords:
+    """Step 1 of the news pipeline (see app/pipeline.py): classifies the note
+    as newsworthy or not, picks a category, and produces the specific/broader
+    query strings app/news.py tries in order. The "beat" query isn't part of
+    this call - it's built deterministically from config/news_topics.yaml
+    (app/news_config.beat_query_for), so the category terms stay
+    config-editable rather than re-guessed by the model on every call.
+
+    Gets only one retry (not the usual 5) - per spec, invalid JSON here means
+    skip the news step entirely rather than hold up drafting over it.
+    """
+    prompt = _load_prompt("news_keywords.txt").format(note_text=note_text)
+    try:
+        result = client.generate_json(
+            prompt, response_schema=NEWS_KEYWORDS_SCHEMA, schema_name="news_keywords", max_retries=2
+        )
+    except Exception:  # noqa: BLE001 - skip news, don't block drafting
+        return NewsKeywords(newsworthy=False)
+
+    if not result.get("newsworthy"):
+        return NewsKeywords(newsworthy=False)
+
+    return NewsKeywords(
+        newsworthy=True,
+        category=result.get("category"),
+        keywords=list(result.get("keywords") or [])[:5],
+        specific_query=result.get("specific_query"),
+        broader_query=result.get("broader_query"),
+    )
+
+
 # --- drafting ------------------------------------------------------------------
 
 def _build_news_block(news_items: list[NewsItem]) -> str:
@@ -213,15 +267,15 @@ def generate_draft(
         note_text=note_text,
         news_block=_build_news_block(news_items),
     )
-    result = client.generate_json(prompt, response_schema=DRAFT_SCHEMA)
-    idx = result.get("used_news_item_index")
+    result = client.generate_json(prompt, response_schema=DRAFT_SCHEMA, schema_name="draft")
+    idx = result.get("news_index") if result.get("used_news") else None
     # Guard against a hallucinated index or reference not actually in the feed.
     if idx is not None and (not isinstance(idx, int) or idx < 0 or idx >= len(news_items)):
         idx = None
-    text = result["draft_text"]
+    text = result["post"]
     if idx is not None:
         idx = _verify_news_reference_or_drop(text, news_items, idx)
-    return DraftResult(text=text, word_count=int(result.get("word_count", len(text.split()))), used_news_item_index=idx)
+    return DraftResult(text=text, word_count=len(text.split()), used_news_item_index=idx)
 
 
 def _verify_news_reference_or_drop(text: str, news_items: list[NewsItem], idx: int) -> Optional[int]:

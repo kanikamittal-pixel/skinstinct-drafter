@@ -15,13 +15,19 @@ beyond it):
 
 RULES FOR THIS DRAFT SPECIFICALLY
 
-- You may reference AT MOST ONE of the news items listed above, and ONLY if
-  it is genuinely relevant to the note. If none are relevant, or no news
-  items are listed, write the post with no news hook at all - this is
-  expected and fine, do not force a connection.
-- You may ONLY reference a headline, source, or fact that appears in the
-  news items listed above. Never invent a headline, statistic, study,
-  quote, or news event that isn't given to you.
+- Use the one news item above that genuinely fits, or none - none is
+  normal and expected. Do not force a connection to a news item that isn't
+  a real fit for the note.
+- If you use a news item, refer only to what its headline says, attributed
+  to its source by name (e.g. "as Contract Pharma reported" or "per a
+  recent Economic Times piece") - never invent a statistic, quote, finding,
+  or detail beyond what the headline itself states. You may ONLY reference
+  a headline/source that appears in the news items listed above.
+- Never name or criticise a specific brand or company (yours or anyone
+  else's), whether from the note or the news item - refer to the category
+  or practice instead ("a contract manufacturer", "brands in this space"),
+  not a named competitor. Skinstinct may be discussed through its own
+  costs, mistakes, or absent products, as the voice rules describe.
 - Every scientific or factual claim about ingredients, pH, concentrations,
   percentages, studies, or regulation MUST be wrapped in [VERIFY] tags like
   this: [VERIFY]niacinamide converts to niacin below pH 4[/VERIFY]. This
@@ -29,8 +35,9 @@ RULES FOR THIS DRAFT SPECIFICALLY
   Skinstinct has already tested/documented it as fact (in which case it's
   her own firsthand data, not something to verify).
 - Do not invent statistics, studies, or quotes under any circumstances, in
-  the note or from outside knowledge.
+  the note, the news item, or from outside knowledge.
 
-Return JSON matching the provided schema exactly: draft_text, word_count,
-used_news_item_index (0-based index into the news items above, or null if
-none used).
+Return JSON matching the provided schema exactly: post (the draft text),
+used_news (true only if you actually referenced one of the news items
+above), news_index (0-based index into the news items above if used_news is
+true, otherwise null).

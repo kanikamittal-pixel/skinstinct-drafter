@@ -1,0 +1,65 @@
+# Editable config for the news step (app/news.py, app/drafting.py).
+#
+# categories.<name>.terms: 2-3 category terms joined with OR to build the
+#   "beat" fallback query, and used for the +1 "category term in headline"
+#   ranking bonus and the "headline must contain a keyword or category
+#   term" filter.
+# trusted_sources: outlet names that get a +1 ranking bonus. Matched as a
+#   case-insensitive substring against the item's source name.
+# blocked_sources: outlet names dropped outright regardless of relevance -
+#   press-release wires and coupon/deal sites, which show up often for
+#   commerce-adjacent skincare searches but are never a real news hook.
+
+categories:
+  ingredients:
+    terms:
+      - "skincare ingredient"
+      - "cosmetic ingredient"
+      - "active ingredient"
+  formulation:
+    terms:
+      - "cosmetic formulation"
+      - "skincare formulation"
+      - "product stability"
+  regulation:
+    terms:
+      - "cosmetic regulation"
+      - "BIS cosmetics"
+      - "CDSCO cosmetics"
+  claims:
+    terms:
+      - "clinically tested claim"
+      - "cosmetic claim"
+      - "advertising standards"
+  industry:
+    terms:
+      - "skincare industry"
+      - "beauty industry"
+      - "personal care industry"
+  climate:
+    terms:
+      - "humidity skincare"
+      - "climate skin"
+      - "monsoon skincare"
+
+trusted_sources:
+  - "Economic Times"
+  - "ET"
+  - "Mint"
+  - "Business Standard"
+  - "The Hindu"
+  - "Hindustan Times"
+  - "HT"
+  - "Indian Express"
+  - "Reuters"
+  - "BBC"
+
+blocked_sources:
+  - "PR Newswire"
+  - "Business Wire"
+  - "GlobeNewswire"
+  - "PRWeb"
+  - "RetailMeNot"
+  - "Slickdeals"
+  - "CouponFollow"
+  - "Coupons.com"

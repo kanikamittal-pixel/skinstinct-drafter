@@ -10,7 +10,6 @@ future batch.
 """
 from __future__ import annotations
 
-import json
 import sqlite3
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
@@ -85,7 +84,6 @@ async def _handle_pick(update: Update, context: ContextTypes.DEFAULT_TYPE, *, no
     pick_id = db.record_pick(conn, batch_id=batch_row["id"] if batch_row else 0, note_id=note_id)
     conn.commit()
 
-    tags = json.loads(note["tags"]) if note["tags"] else []
     try:
         result = build_fresh_draft(
             conn,
@@ -93,7 +91,6 @@ async def _handle_pick(update: Update, context: ContextTypes.DEFAULT_TYPE, *, no
             note_id=note_id,
             pick_id=pick_id,
             note_text=_note_display_text(note),
-            tags=tags,
             piece_type=note["piece_type"] or "explainer",
         )
     except Exception as exc:  # noqa: BLE001 - a drafting failure must not crash the bot

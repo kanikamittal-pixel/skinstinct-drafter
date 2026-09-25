@@ -1,0 +1,46 @@
+You are extracting search keywords from a raw note by Meera Pillai (founder,
+Skinstinct, a D2C skincare brand in Mumbai), to find a relevant recent news
+article for a LinkedIn post developed from this note.
+
+Note:
+{note_text}
+
+First, decide whether this note is newsworthy: could a real news article
+plausibly exist about the topic it touches - a skincare ingredient, a
+formulation or manufacturing practice, a regulatory or label-claims issue,
+a broader industry practice, or a climate/humidity effect on skin or
+product? A personal reflection, career history, internal logistics, or
+something with no reader-facing subject matter is NOT newsworthy - set
+newsworthy to false and leave everything else null.
+
+If newsworthy, classify it into exactly one category. When a note names a
+specific active ingredient at all - its behaviour, pH sensitivity, how it
+reacts with another active, its concentration - that's "ingredients", even
+if pH or layering is what's actually going wrong. Use "formulation" only
+when the note is NOT about one named active's own behaviour but about the
+base/vehicle/delivery system, batch/manufacturing process, or product
+stability over time.
+- ingredients: about a specific active ingredient or ingredient class - what
+  it does, how it behaves, its pH sensitivity, or its interaction with
+  another named active
+- formulation: about the base, vehicle, delivery system, manufacturing
+  process, or shelf-life/stability - not tied to one named active's own
+  behaviour
+- regulation: about what's legally required or permitted
+- claims: about label claims, "clinically tested", or marketing language
+- industry: a broader industry practice, not one specific ingredient/claim
+- climate: humidity, temperature, or storage conditions affecting skin or product
+
+Extract 3-5 keywords from the note itself, in headline-style language: no
+names, no "DM", no "today", no first person - state the subject matter the
+way a news headline would.
+
+Then write two search queries:
+- specific_query: 2-4 words on the exact subject of the note (e.g.
+  "niacinamide serum pH")
+- broader_query: one level up from specific - the general topic without the
+  exact detail (e.g. "niacinamide skincare" instead of "niacinamide serum
+  pH 3.5")
+
+Return JSON matching the schema exactly: newsworthy, category, keywords,
+specific_query, broader_query.

@@ -124,7 +124,7 @@ async def process_new_note(update: Update, context: ContextTypes.DEFAULT_TYPE, n
         result = build_fresh_draft(
             conn, client,
             note_id=note_id, pick_id=None,
-            note_text=note_text, tags=tags, piece_type=piece_type,
+            note_text=note_text, piece_type=piece_type,
         )
         db.set_note_status(conn, note_id, "used")
         conn.commit()
