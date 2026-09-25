@@ -17,6 +17,7 @@ and link, exactly as the feed returned them.
 """
 from __future__ import annotations
 
+import re
 import time
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
@@ -139,21 +140,71 @@ def _fetch_query(query: str, *, timeout: float) -> list[NewsItem]:
     return _parse_entries(parsed, cutoff)
 
 
+_STOPWORDS = {
+    "a", "an", "the", "in", "on", "of", "for", "and", "or", "to", "with",
+    "is", "are", "was", "were", "be", "at", "by", "from", "as", "this",
+    "that", "it", "its", "new", "issues", "practices",
+}
+
+
+def _normalize_word(word: str) -> str:
+    # Crude singular/plural folding (claim/claims, regulation/regulations) -
+    # good enough for headline matching without pulling in a stemming
+    # library for one rule.
+    if len(word) > 4 and word.endswith("ies"):
+        return word[:-3] + "y"
+    if len(word) > 4 and word.endswith("es") and not word.endswith("ses"):
+        return word[:-2]
+    if len(word) > 4 and word.endswith("s") and not word.endswith("ss"):
+        return word[:-1]
+    return word
+
+
+def _significant_words(text: str) -> set[str]:
+    return {
+        _normalize_word(w) for w in re.findall(r"[a-z0-9]+", text.lower())
+        if len(w) > 3 and w not in _STOPWORDS
+    }
+
+
+def _word_overlap(headline: str, phrase: str) -> bool:
+    """Whether any significant word from `phrase` appears as a whole word in
+    `headline`. Deliberately word-level, not phrase-level: a real headline
+    almost never contains a multi-word LLM-generated keyword phrase (e.g.
+    "Cold-Pressed Labeling Error") verbatim, so requiring the full phrase
+    dropped genuinely relevant articles in testing - a cosmetics-labeling
+    regulation story got filtered out because its headline said "Labels",
+    not the keyword's exact "Labeling Error".
+    """
+    headline_words = _significant_words(headline)
+    return any(w in headline_words for w in _significant_words(phrase))
+
+
 def _passes_filter(item: NewsItem, *, config: NewsTopicsConfig, keywords: list[str], category: Optional[str]) -> bool:
     if config.is_blocked(item.source):
         return False
-    headline_lower = item.title.lower()
-    keyword_hit = any(kw.lower() in headline_lower for kw in keywords)
-    category_hit = bool(category) and config.matches_category_term(item.title, category)
+    keyword_hit = any(_word_overlap(item.title, kw) for kw in keywords)
+    category_hit = bool(category) and any(
+        _word_overlap(item.title, term) for term in config.category_terms.get(category, [])
+    )
     return keyword_hit or category_hit
 
 
 def _rank_score(item: NewsItem, *, config: NewsTopicsConfig, keywords: list[str], category: Optional[str]) -> int:
     score = 0
     headline_lower = item.title.lower()
+    # Ranking rewards an exact keyword phrase match more (the stronger
+    # signal) but still gives credit for the looser word-level overlap that
+    # the filter itself uses, so a real but loosely-worded match isn't
+    # scored at zero.
     if any(kw.lower() in headline_lower for kw in keywords):
         score += 3
-    if category and config.matches_category_term(item.title, category):
+    elif any(_word_overlap(item.title, kw) for kw in keywords):
+        score += 2
+    if category and (
+        config.matches_category_term(item.title, category)
+        or any(_word_overlap(item.title, term) for term in config.category_terms.get(category, []))
+    ):
         score += 1
     if config.is_trusted(item.source):
         score += 1
