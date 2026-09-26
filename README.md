@@ -5,6 +5,13 @@ voice, twice a week, for her to review. Nothing is ever posted
 automatically - every draft goes through Approve / Revise / Reject in her
 private Telegram chat, and Meera always publishes herself.
 
+> **This repository is shared for review only.** No license is granted to
+> use, copy, modify, deploy, or redistribute this code, in whole or in
+> part - all rights are reserved. It's public so it can be read and
+> discussed, not reused. (It also won't run as-is for anyone else: real
+> credentials live only in a local, gitignored `.env` that was never
+> committed - see "Setup" below.)
+
 ## How it works
 
 1. Meera drops notes (text or voice) into her private Telegram channel, as
